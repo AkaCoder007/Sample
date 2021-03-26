@@ -1,0 +1,106 @@
+
+ANIL BORNWINNER@LAPTOP-CGQ2DM7G MINGW64 /e/sample
+$ git --version
+git version 2.30.0.windows.2
+
+ANIL BORNWINNER@LAPTOP-CGQ2DM7G MINGW64 /e/sample
+$ git config --global user.name "AkaCoder007"
+
+ANIL BORNWINNER@LAPTOP-CGQ2DM7G MINGW64 /e/sample
+$ git config --global user.email "anilphiyak617@gmail.com"
+
+ANIL BORNWINNER@LAPTOP-CGQ2DM7G MINGW64 /e/sample
+$ git config --list
+diff.astextplain.textconv=astextplain
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+http.sslbackend=openssl
+http.sslcainfo=C:/Program Files/Git/mingw64/ssl/certs/ca-bundle.crt
+core.autocrlf=true
+core.fscache=true
+core.symlinks=false
+pull.rebase=false
+credential.helper=manager-core
+credential.https://dev.azure.com.usehttppath=true
+init.defaultbranch=master
+user.name=AkaCoder007
+user.email=anilphiyak617@gmail.com
+
+ANIL BORNWINNER@LAPTOP-CGQ2DM7G MINGW64 /e/sample
+$ git init
+Initialized empty Git repository in E:/sample/.git/
+
+
+ANIL BORNWINNER@LAPTOP-CGQ2DM7G MINGW64 /e/sample (master)
+$ git add A.cpp.txt
+
+ANIL BORNWINNER@LAPTOP-CGQ2DM7G MINGW64 /e/sample (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   A.cpp.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        B.cpp
+
+
+ANIL BORNWINNER@LAPTOP-CGQ2DM7G MINGW64 /e/sample (master)
+$ git add .
+
+ANIL BORNWINNER@LAPTOP-CGQ2DM7G MINGW64 /e/sample (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   A.cpp.txt
+        new file:   B.cpp
+
+ANIL BORNWINNER@LAPTOP-CGQ2DM7G MINGW64 /e/sample (master)
+$ git commit -m "Learning first time"
+[master (root-commit) 9fdd22f] Learning first time
+ 2 files changed, 16 insertions(+)
+ create mode 100644 A.cpp.txt
+ create mode 100644 B.cpp
+
+ANIL BORNWINNER@LAPTOP-CGQ2DM7G MINGW64 /e/sample (master)
+$ git log
+commit 9fdd22f7c3167b0ec1cfc36a6890709edb22f960 (HEAD -> master)
+Author: AkaCoder007 <anilphiyak617@gmail.com>
+Date:   Fri Mar 26 20:00:04 2021 +0530
+
+    Learning first time
+
+
+ANIL BORNWINNER@LAPTOP-CGQ2DM7G MINGW64 /e/sample (master)
+$ git checkout  76c717b1b805c392a8b2a00f88bc9d1e954d6489
+Note: switching to '76c717b1b805c392a8b2a00f88bc9d1e954d6489'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at 76c717b github.txt added
+
+
+
